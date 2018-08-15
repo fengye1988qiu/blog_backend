@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 # blog_backend
-=======
-# backend
-
-
 
 ## QuickStart
 
@@ -34,4 +29,3 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
->>>>>>> First push
