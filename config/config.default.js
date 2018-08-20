@@ -1,5 +1,5 @@
 'use strict';
-const path = require('path');
+// const path = require('path');
 module.exports = appInfo => {
   const config = (exports = {});
 
@@ -24,28 +24,28 @@ module.exports = appInfo => {
     },
   };
 
-  config.view = {
-    root: path.join(appInfo.baseDir, 'app/assets'),
-    mapping: {
-      '.html': 'nunjucks',
-      '.js': 'assets',
-    },
-  };
+  // config.view = {
+  //   root: path.join(appInfo.baseDir, 'app/assets'),
+  //   mapping: {
+  //     '.html': 'nunjucks',
+  //     '.js': 'assets',
+  //   },
+  // };
 
-  config.assets = {
-    publicPath: '/public/',
-    devServer: {
-      debug: false,
-      command: 'roadhog dev',
-      port: 4200,
-      env: {
-        BROWSER: 'none',
-        ESLINT: 'none',
-        SOCKET_SERVER: 'http://127.0.0.1:7001',
-        PUBLIC_PATH: 'http://127.0.0.1:7001',
-      },
-    },
-  };
+  // config.assets = {
+  //   publicPath: '/public/',
+  //   devServer: {
+  //     debug: false,
+  //     command: 'roadhog dev',
+  //     port: 4200,
+  //     env: {
+  //       BROWSER: 'none',
+  //       ESLINT: 'none',
+  //       SOCKET_SERVER: 'http://127.0.0.1:7001',
+  //       PUBLIC_PATH: 'http://127.0.0.1:7001',
+  //     },
+  //   },
+  // };
 
   return config;
 };
