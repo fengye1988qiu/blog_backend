@@ -8,15 +8,15 @@ module.exports = app => {
 
   // router.get('*', controller.home.render);
 
-  router.put('/login', controller.login.doLogin);
+  router.put('/api/login', controller.login.doLogin);
 
-  router.get('/users', controller.user.users);
-  router.post('/users', controller.user.create);
-  router.get('/users/:id', controller.user.user);
+  router.get('/api/users', controller.user.users);
+  router.post('/api/users', controller.user.create);
+  router.get('/api/users/:id', controller.user.user);
 
-  router.get('/articles', controller.article.getList);
-  router.get('/articles/:id', controller.article.getOne);
-  router.post('/articles', controller.article.create);
-  router.put('/articles/:id', controller.article.update);
-  router.delete('/articles/:id', controller.article.delete);
+  router.get('/api/articles', controller.article.getList);
+  router.get('/api/articles/:id', controller.article.getOne);
+  router.post('/api/articles', controller.article.create);
+  router.put('/api/articles/:id', controller.article.update);
+  router.delete('/api/articles/:id', controller.article.delete);
 };
